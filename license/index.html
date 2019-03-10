@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Tietokantasovellus, 2019 | Kurssin työvälineet</title>
+    <title>Tietokantasovellus, 2019 | Lisenssi ja kiitokset</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -42,11 +42,11 @@
       <li class="nav-item ">
         <a href="../" class="nav-link" onclick="ga('send', 'event', 'navigation_topic_link', 'click', '#&lt;Middleman::Sitemap::Resource path=index.html&gt;')">Johdanto</a>
       </li>
-      <li class="nav-item active">
-        <a href="./" class="nav-link" onclick="ga('send', 'event', 'navigation_topic_link', 'click', '#&lt;Middleman::Sitemap::Resource path=tyovalineet.html&gt;')">Kurssin työvälineet</a>
-      </li>
       <li class="nav-item ">
-        <a href="../license/" class="nav-link" onclick="ga('send', 'event', 'navigation_topic_link', 'click', '#&lt;Middleman::Sitemap::Resource path=license.html&gt;')">Lisenssi ja kiitokset</a>
+        <a href="../tyovalineet/" class="nav-link" onclick="ga('send', 'event', 'navigation_topic_link', 'click', '#&lt;Middleman::Sitemap::Resource path=tyovalineet.html&gt;')">Kurssin työvälineet</a>
+      </li>
+      <li class="nav-item active">
+        <a href="./" class="nav-link" onclick="ga('send', 'event', 'navigation_topic_link', 'click', '#&lt;Middleman::Sitemap::Resource path=license.html&gt;')">Lisenssi ja kiitokset</a>
       </li>
       <li class="nav-item ">
         <a href="../osa1/" class="nav-link" onclick="ga('send', 'event', 'navigation_topic_link', 'click', '#&lt;Middleman::Sitemap::Resource path=osa1.html&gt;')">Osa 1</a>
@@ -104,51 +104,12 @@
       <div class="content-wrapper">
         <div class="container material" id="material">
 
-          
-<h1 class="material-heading">
-    Työvälineet ja niiden asentaminen
+          Kurssimateriaalin on tehnyt Arto Hellas. Muita tekijöitä löytyy kurssimateriaalin <a href=https://github.com/materiaalit/tsoha-19 target="_blank" norel>GitHub-reposta</a>.
 
-</h1>
+Tämä materiaali on lisensoitu Creative Commons BY-NC-SA-lisenssillä, joten voit käyttää ja levittää sitä vapaasti, kunhan alkuperäisten tekijöiden nimiä ei poisteta. Jos teet muutoksia materiaaliin ja haluat levittää muunneltua versiota, se täytyy lisensoida samalla lisenssillä. Materiaalien käyttö kaupalliseen tarkoitukseen on ilman erillistä lupaa kielletty.
 
-<p>
-  Harjoitustyötä varten tarvitset:
-</p>
 
-<ul>
-  <li>
-    Tuen Python-kielisten ohjelmien suorittamiseen. Käytössäsi tulee olla vähintään Pythonin versio 3.5. Löydät tarvittaessa Pythonin asentamiseen tarvittavat tiedostot osoitteesta <a href="https://www.python.org/downloads/" target="_blank" norel>https://www.python.org/downloads/</a>. Linux-järjestelmissä tarvittavan Python-version pystyy hyvin todennäköisesti asentamaan käyttöjärjestlmän oman pakettienhallinnan kautta.<br/><br/>
-  </li>
-  <li>
-    Tuen Python-kirjastojen lataamiseen. Käytössäsi tulee olla Pythonin <a href="https://packaging.python.org/key_projects/#pip" target="_blank" norel>pip</a>, jonka avulla saat ladattua apukirjastoja. Pip asentuu oletuksena edellä annetun linkin takaa löytyvistä Python-versioista.<br/><br/>
-  </li>
-  <li>
-    Tuen Python-"virtuaaliympäristöjen" luomiseen. Käytössäsi tulee olla Pythonin <a href="https://docs.python.org/3/library/venv.html" target="_blank" norel>venv</a>-kirjasto, jonka avulla voit luoda toisistaan riippumattomia Python-projekteja. Tuki tulee mahdollisesti edellä asentaman Python-ympäristön mukana. Lue myös osoitteessa <a href="https://docs.python.org/3/tutorial/venv.html" target="_blank" norel>https://docs.python.org/3/tutorial/venv.html</a> oleva opas, ja kokeile virtuaaliympäristön luomista.<br/><br/>
-  </li>
-  <li>
-    PostgreSQL-tietokannanhallintajärjestelmän. Käytössäsi tulee olla <a href="https://www.postgresql.org/" target="_blank" norel>PostgreSQL</a>-tietokannanhallintajärjestelmä. Hyödyt myös välineistä tietokannanhallintajärjestelmän käsittelyyn -- tässä esimerkiksi <a href="https://www.pgadmin.org/" taret="_blank" norel>pgAdmin</a> on hyvä.<br/><br/>
-  </li>
-  <li>
-    Työvälineet gitin käyttöön. Käytössäsi tulee olla työvälineet git-repojen käsittelyyn. Asennusohjeet löytyvät osoitteesta <a href="https://git-scm.com/downloads/" target="_blank" norel>https://git-scm.com/downloads</a>.<br/><br/>
-  </li>
-  <li>
-    Työvälineet <a href="https://www.heroku.com/" target="_blank" norel>Herokun</a> käyttöön. Käytössäsi tulee olla työvälineet herokussa sijaitsevien palvelujen käsittelyyn. Asennusohjeet löytyvät osoitteesta <a href="https://devcenter.heroku.com/articles/heroku-cli" target="_blank" norel>https://devcenter.heroku.com/articles/heroku-cli</a>.<br/><br/>
-  </li>
-
-  <li>
-    Sopivan ohjelmointiympäristön Python-kehitykselle. Pythonin käyttäminen NetBeans 8.2 -versiossa on <a href="https://stackoverflow.com/questions/47477890/netbeans-8-2-python-plugin" target="_blank" norel>periaatteessa mahdollista</a>, mutta esimerkiksi <a href="https://code.visualstudio.com/" target="_blank" norel>Visual Studio Code</a> on todennäköisesti tähän tarkoitukseen paljon parempi.<br/><br/>
-  </li>
-  
-  <li>
-    Github-käyttäjätunnuksen. Harjoitustyö säilötään Github-palveluun. Tarvitset <a href="https://github.com/" target="_blank">Githubin</a> käyttöön käyttäjätunnuksen.<br/><br/>
-  </li>
-  <li>
-    Heroku-käyttäjätunnuksen. Harjoitustyö julkaistaan verkossa Heroku-pilvipalvelussa. Tarvitset tunnukset <a href="https://www.heroku.com/" target="_blank" norel>Heroku</a>-palveluun.<br/><br/>
-  </li>
-  <li>
-    Labtool-käyttäjätunnuksen. Harjoitustyön arvostelu ja viikoittaiset palautukset tapahtuvat Labtool-työvälineen kautta. Osoite julkaistaan pian.<br/><br/>
-  </li>    
-
-</ul>
+Materiaalin aihelista sekä vertausarviointiohjeet ovat muokattu <a href="http://advancedkittenry.github.io/suunnittelu_ja_tyoymparisto/aiheet/index.html" target="_blank" norel>vanhemmasta kurssimateriaalista</a>. Sen lisenssi on Creative Commons Attributions-SA 3.0 Unported License ja lisenssinhaltijana <a href="http://advancedkittenry.github.io/suunnittelu_ja_tyoymparisto/aiheet/credits.html" target="_blank" norel>David Consuegra et al</a>.
 
         </div>
       </div>
@@ -156,13 +117,13 @@
       <div class="footer-wrapper">
         <footer class="footer">
   <div>
-    <a href="../license/">Kiitokset ja materiaalista</a>
+    <a href="./">Kiitokset ja materiaalista</a>
   </div>
   <div class="improvement">
     <a href="https://github.com/materiaalit/tsoha-19/issues/new"  target="_blank" rel="noopener" class="btn btn-primary">
   <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Ilmoita virhe
 </a>
-<a href="https://github.com/materiaalit/tsoha-19/edit/master/source/tyovalineet.html.erb" target="_blank" rel="noopener" class="btn btn-primary">
+<a href="https://github.com/materiaalit/tsoha-19/edit/master/source/license.html.erb" target="_blank" rel="noopener" class="btn btn-primary">
   <i class="fa fa-pencil" aria-hidden="true"></i> Muokkaa sivua
 </a>
      <a href="https://github.com/materiaalit/tsoha-19" class="footer__github-link" target="_blank" rel="noopener">
