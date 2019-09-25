@@ -647,6 +647,24 @@ sqlite>
   Mikäli tiedostossa <code>tasks.db</code> on paljon turhaa tietoa, tai sen haluaa alustaa uudestaan, onnistuu uudelleen alustaminen poistamalla tiedoston ja käynnistämällä sovelluksen uudestaan.
 </p>
 
+<div class="hint">
+  <div class="hint__header">
+    <i class="fa fa-info-circle hint__icon"></i>Lomakkeet ja tietokannan kentät
+  </div>
+
+  <div class="hint__body">
+    
+  <p>
+    Huomioi työtä tehdessäsi että SQLAlchemy ainoastaan luo puolestasi taulut joita ei ole olemassa ennestään. Jos teet muutoksia olemassa olevien taulujesi rakenteeseen, joudut poistamaan tietokannan kuten yllä jotta se luotaisiin uudestaan. Huomioi että kun myöhemmin otat käyttöön Postgres-tietokannan Herokussa, joudut tälläisissä tapauksissa poistamaan tietokannan myös Herokusta.
+  </p>
+
+  <p>
+    Projektin aikana tietokantaan tehtävät muutokset saa organisoitua järkevämmin jonkun migraatiotyökalun avulla (ks. esim <a href="https://flask-migrate.readthedocs.io/en/latest/" target="_blank" norel>Flask-Migrate</a>).
+  </p>
+
+
+  </div>
+</div>
 
 <h2 class="material-heading">
     Kirjautumislomake
@@ -1490,6 +1508,7 @@ if __name__ == '__main__':
 <p>
   Eräs tyypillinen virhe liittyy kirjautumiseen. Mikäli olet kirjautunut ja käynnistät sovelluksen uudelleen, kirjautumistiedot katoaa. Sovellusta kannattaa testata selaimen anonyymimodessa (esim. Chromen "New incognito window"). Kun käynnistät sovelluksen uudelleen, sulje myös selaimen anonyymi-ikkuna ja avaa se uudelleen. Tämän jälkeen kirjaudu sovellukseen ja käytä sitä.
 </p>
+
         </div>
       </div>
 
